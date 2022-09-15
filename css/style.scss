@@ -3,4 +3,10 @@ $secondary: #345B63;
 $tertiary: #152D35;
 $background: #112031;
 
+nav{
+    .active {
+        background-color: $secondary;
+    }
+}
+
 
