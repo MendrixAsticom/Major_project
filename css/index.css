@@ -1,0 +1,90 @@
+@import url('http://fonts.cdnfonts.com/css/sen');
+body, footer{ 
+    font-family:"Sen",sans-serif !important;
+}
+footer{
+    font-weight: 400;
+    background-color:#ddf1ff;
+}
+.bg-blue {
+    background-color: #d7f2ff;
+    opacity:1;
+}
+#img-width img {
+    max-width:472px;
+}
+.container {
+    max-width: 100%;
+  }
+  #containerFluid{
+    max-width: 100%;
+  }
+  
+
+  @media (min-width:576px) and (max-width:767px)
+{
+    #TheStory{
+       text-align: center;
+    }
+    #diaper{
+        margin-top: 4%;
+        
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    #diaper{
+        margin-top: 10%;
+        
+    }
+    #u{
+        height: auto;
+    }
+}
+@media (min-width:992px){
+    #TheStory{
+        align-self: center;
+    }
+    #aYoung{
+        align-self: center;
+    }
+    #momsLife{
+        align-self: center;
+    }
+    #diaper{
+        align-content: center;
+        margin-top: -10%;
+        
+    }
+    #ReadMe{
+        align-content: center;
+    }
+   
+}
+@media (max-width:575px){ /* xs */
+  
+    #TheStory{
+        align-self: left;
+    }
+    #aYoung{
+        align-self: center;
+    }
+    #momsLife{
+        align-self: center;
+    }
+    #diaper{
+        margin-top: 0px;
+        align-content: center;
+        
+    }
+    #ReadMe{
+        align-content:left;
+    }
+
+}
+@media (min-width:1024px){ /* xs */
+  
+    #u{
+        height: auto;
+    }
+}
