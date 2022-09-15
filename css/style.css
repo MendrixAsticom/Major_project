@@ -1,3 +1,147 @@
+@import url("http://fonts.cdnfonts.com/css/red-hat-display");
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 nav .active {
   background-color: #345B63;
+}
+
+footer {
+  background-color: #152D35;
+  color: #D4ECDD;
+}
+
+h1 {
+  color: #D4ECDD;
+  -webkit-text-stroke: medium;
+  font-size: 120px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  -webkit-text-stroke: medium;
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+
+span {
+  -webkit-text-stroke: 0;
+  font-size: 80px;
+}
+
+.bannerText {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  display: none;
+}
+
+.wrapper {
+  height: 100px;
+  width: 100%;
+}
+
+.spanAdjectives {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  -webkit-animation: spin_words 10s infinite;
+          animation: spin_words 10s infinite;
+}
+
+.words {
+  overflow: hidden;
+}
+
+@-webkit-keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+@media (max-width: 1210px) {
+  h1 {
+    font-size: 100px;
+  }
+  span {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 80px;
+  }
+  span {
+    font-size: 40px;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 60px;
+  }
+  span {
+    font-size: 20px;
+  }
+  .bannerText {
+    top: 60px;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 40px;
+  }
+  span {
+    font-size: 18px;
+  }
+  .bannerText {
+    top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
