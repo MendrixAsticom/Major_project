@@ -1,3 +1,41 @@
+@import url("http://fonts.cdnfonts.com/css/red-hat-display");
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 nav .active {
   background-color: #345B63;
+}
+
+.smol {
+  font-size: 13px;
+}
+
+.btn-sales {
+  max-width: 140px;
+}
+
+@media (max-width: 575px) {
+  #benben {
+    max-width: 400px;
+    height: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #benben {
+    max-width: 420px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #benben {
+    max-width: 420px;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  #benben {
+    max-width: 400px;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

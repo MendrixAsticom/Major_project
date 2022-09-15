@@ -53,7 +53,55 @@
             </div>
         </div>
     </nav>
-    
+    <main>
+        <div class="container-fluid">
+            <div class="container-fluid pb-5 wv-100">
+                <span><h1>Reserve Now!!</h1></span>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around">
+                <div class="d-flex w-sm-100 w-md-50 justify-content-center order-md-2">
+                    <img id="benben" class="image-fluid w-100" src="assets/ben&ben-min.jpg" alt="benenbenlog">
+                </div>
+                <div class="d-flex justify-content-center w-sm-50 order-md-1">
+                    <div>
+                        <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
+                            <div><h3>3.21</b></h3></div>
+                            <div class="px-md-2 px-lg-5 ">
+                                <div><h4>Edinbro</h4></div>  
+                                <div class="smol">O2 Academy Edinburgh</div>
+                            </div>
+                            <button class="btn btn-dark rounded-0 btn-sales" role="button" href="#">BUY NOW</button>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
+                            <div><h3>4.01</h3></div>
+                            <div class="px-md-2 px-lg-5">
+                                <div><h4>Edinburgh, UK</h4></div>  
+                                <div class="smol">O2 Academy Edinburgh</div>
+                            </div>
+                            <button class="btn btn-dark rounded-0 btn-sales"> BUY NOW</button>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between" >
+                            <div><h3>5.30</h3></div>
+                            <div class="px-md-2 px-lg-5">
+                                <div><h4>Edinburgh, UK</h4></div>  
+                                <div class="smol">O2 Academy Edinburgh</div>
+                            </div>
+                            <button class="btn btn-dark rounded-0 btn-sales"> BUY NOW</button>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
+                            <div><h3>6.20</h3></div>
+                            <div class="px-md-2 px-lg-5">
+                                <div><h4>Edinburgh, UK</h4></div>  
+                                <div class="smol">O2 Academy Edinburgh</div>
+                            </div>
+                            <button class="btn btn-dark rounded-0 btn-sales"> BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
     <!-- footer -->
     <footer>
         <script>
@@ -65,7 +113,9 @@
     </script>
     <script>
         $(document).ready(function(){
-            
+            $(".btn-sales").click(function(){
+                window.location.href= "/booking.html";
+            });
         });
     </script>
 </body>
