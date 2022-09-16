@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
@@ -98,10 +99,9 @@
                                 <i class="bi bi-instagram"></i>
                             </div>
                         <div class="  btn mb-3 my-1 btn-lg rounded-0">
-                            <BUTTON ONCLICK="ShowAndHide()">Read More</BUTTON>
-                        </div>
-                        <div ID="SectionName" STYLE="display:none ">
-                            <span id="first"style="color: white;">Mendrix is</span>
+                            <BUTTON id="send">View</BUTTON>
+                            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+                            <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js></script>
                         </div>
                 </div>
                 
@@ -115,7 +115,7 @@
                             <i class="bi bi-instagram"></i>
                         </div>
                         <div class="  btn mb-3 my-1 btn-lg rounded-0">
-                            <BUTTON ONCLICK="ShowAndHide2()">Read More</BUTTON>
+                            <BUTTON ONCLICK="ShowAndHide2()">View</BUTTON>
                         </div>
                         <div ID="SectionName2" STYLE="display:none ">
                             <span id= "second" style="color: white;">Lyca is</span>
@@ -131,7 +131,7 @@
                             <i class="bi bi-instagram"></i>
                         </div>
                         <div class="  btn mb-3 my-1 btn-lg rounded-0">
-                            <BUTTON ONCLICK="ShowAndHide3()">Read More</BUTTON>
+                            <BUTTON ONCLICK="ShowAndHide3()">View</BUTTON>
                         </div>
                         <div ID="SectionName3" STYLE="display:none ">
                             <span id="third"style="color: white;">Mike is</span>
@@ -154,24 +154,25 @@
                     – we’re <BR> all about community and two-way communication here at Ampli.fy. </h5>
                 </div>
             </div>
-            <div class="button pt-5" style="text-align-last:center">
-                <button type="button" class="btn btn-dark text-center rounded-0 btn-lg" href="../html/contact.html">CONTACT</button>
+            <div class="button pt-5 px-2" style="text-align-last:center">
+                <button type="button" class="btn btn-dark text-center rounded-0 btn-lg " href="contact.html">CONTACT</button>
             </div>
-            
         </div>
     </main>
     <footer>
         <script>
             $("footer").load("footer.html");
             
-           function ShowAndHide() {
-                var x = document.getElementById('SectionName');
-                if (x.style.display == 'none') {
-                    x.style.display = 'block';
-                } else {
-                    x.style.display = 'none';
-                }
-            }
+            $("#send").click(function(){
+                Swal.fire({
+                title: 'Sweet!',
+                text: 'Modal with a custom image.',
+                imageUrl: 'https://mail.google.com/400/200',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+                })
+        })
             function ShowAndHide2() {
                 var a = document.getElementById('SectionName2');
                 if (a.style.display == 'none') {
