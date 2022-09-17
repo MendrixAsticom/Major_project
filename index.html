@@ -57,8 +57,8 @@
         <div style="position: relative;">
             <img src="https://images.unsplash.com/photo-1609102026400-3c0ca378e4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" class="img-fluid w-100" alt="">
             <div class="pt-2 ps-md-4 showBanner bannerText">
-                 <h1>Music<span> conveys</span></h1> 
-                 <h1>Strength<span> and </span>Love</h1>
+                 <h1>Discover<span> the</span></h1> 
+                 <h1>Magic<span> of </span>Music</h1>
                  <button type="submit" class="btn btn-lg-lg btn-outline-light">See More</button>
              </div>
         </div>
@@ -76,8 +76,8 @@
                             <span class="spanAdjectives">Raucous</span>
                         </div>
                 </div>
-                <p>A music company called Ampli.fy manages many bands and events, primarily local artists. </p>
-                <button type="submit" class="btn btn-lg-lg btn-outline-dark">LEARN MORE</button>
+                <p class="pt-lg-4">A music company called Ampli.fy manages many bands and events, primarily local artists. </p>
+                <button type="submit" class="btn btn-lg-lg btn-outline-light">LEARN MORE</button>
             </div>
             <div class="col-lg-7 p-4">
                 <img src="assets/banner.jpg" class="img-fluid w-100" alt="">
@@ -86,10 +86,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 p-4 text-justify"> 
+            <div class="p-4 text-justify">
                 <h2>Bands</h2>
-                <p>A music company called Ampli.fy manages many bands and events, primarily local artists. </p>
-                <button type="submit" class="btn btn-lg-lg btn-outline-dark">LEARN MORE</button>
+            </div> 
+            <div class="col-lg-5 p-4 justify-content-center imageHover"> 
+                <img src="https://images.unsplash.com/photo-1609102026400-3c0ca378e4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" class="img-fluid w-100 bandsImage" alt="">
+                <h3>Ben & Ben </h3>
+                <div class="progress" style="height: 1px;">
+                    <div class="progress-bar bg-dark" role="progressbar" style="width: 0;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressBar"></div>
+                  </div>
             </div>
             <div class="col-lg-7 p-4">
                 <img src="https://images.unsplash.com/photo-1609102026400-3c0ca378e4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" class="img-fluid w-100" alt="">
@@ -104,6 +109,17 @@
     <script>
     $(document).ready(function () {
         $('.showBanner').fadeIn(2200);
+    });
+    $(function(){
+        $('.imageHover').hover(function(){
+                $('.imageHover').css('cursor', 'pointer');
+                $('#progressBar').attr('aria-valuenow','100').css('width','100%');
+                $('.bandsImage').css('object-fit','none');
+            },
+            function(){
+                $('#progressBar').attr('aria-valuenow','0').css('width','0%');
+                $('.bandsImage').css('object-fit','fill');
+        });
     });
     // $(function() {
     //     $('h1').hover(function(){

@@ -1,6 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/red-hat-display");
 body {
   font-family: "Red Hat Display", sans-serif;
+  background-color: #112031;
+  color: #D4ECDD;
 }
 
 nav .active {

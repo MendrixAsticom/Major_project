@@ -7,6 +7,8 @@ $font-family: "Red Hat Display", sans-serif;
 
 body{
     font-family: $font-family;
+    background-color: $background;
+    color: $primary;
 }
 nav{
     .active {
