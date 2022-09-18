@@ -6,6 +6,8 @@ $background: #112031;
 $font-family: "Red Hat Display", sans-serif;
 body{
     font-family: $font-family;
+    background-color: $background;
+    color:white;
 }
 nav{
     .active {
@@ -18,6 +20,36 @@ nav{
 .btn-sales{
     max-width:140px;
 }
+#admission{
+    min-width:190px;
+}
+#select-spacer{
+    width:40px;
+    max-width:40px;
+}
+#banner-saying{
+    position:relative;
+    #absolute{
+        position:absolute;
+        top:-330px;
+        left:40px;
+        h1{
+            font-weight: 200;
+            padding-right:60px;
+            color:white;
+            font-size:6vw;
+        }
+    }
+}
+.bigus {
+    font-weight:900 !important;
+}
+
+
+
+// #select-spacer{
+//     min-width:20px;
+// }
 // .place{
 //     min-width: 100px;
 // }
@@ -27,12 +59,64 @@ nav{
         max-width:400px;
         height:auto;
     }
+    #item-desc{
+        max-width:500px;        
+    }
+    #store-item{ 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+    }
+    #item-frame{
+        min-height: 275px;
+        min-width: 260px;
+        max-width: 278px;
+        /* max-width: 897px; */
+        position: relative;
+    }
+    #absolute{
+        h1{
+            font-size:44px !important;
+        }
+    }
 }
 //sm
 @media (min-width:576px) and (max-width:767px){
     #benben{ 
         max-width: 420px;
         height:auto;
+    }
+    #store-item{
+        max-width:520px;
+    }
+    #spacer{
+        min-width:100px;
+    }
+    #item-desc{
+        max-width:500px;        
+    }
+    #store-item{ 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+    }
+    #item-frame{
+        min-height: 340px;
+        min-width: 330px;
+        max-width: 350px;
+        /* max-width: 897px; */
+        position: relative;
+    }
+    #absolute{
+        h1{
+            font-size:8vw !important;
+        }
     }
 }
 //md
@@ -41,11 +125,60 @@ nav{
         max-width:420px;
         height:auto;
     }
+    #store-item{
+        max-width:400px;
+    }
+    #spacer{
+        min-width:100px;
+    }
+    #item-desc{
+        max-width:300px;        
+    }
+    #store-item{ 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+    }
+    #item-frame{
+        min-height: 340px;
+        min-width: 330px;
+        max-width: 410px;
+        /* max-width: 897px; */
+        position: relative;
+    }
 }
 //lg above
 @media(min-width:992px) {
     #benben{
         max-width:400px;
         height:auto;
+    }
+    #store-item{
+        max-width:400px;
+        min-width:398px;
+    }
+    #spacer{ 
+        min-width:100px;
+    }
+    #item-desc{
+        max-width:700px;        
+    }
+    #store-item{ 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+    }
+    #item-frame{
+        min-height: 400px;
+        min-width: 397px;
+        max-width: 410px;
+        /* max-width: 897px; */
+        position: relative;
     }
 }
