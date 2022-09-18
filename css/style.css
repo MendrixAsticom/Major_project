@@ -181,6 +181,9 @@ footer {
   .ctnText {
     text-align: center;
   }
+  .ctnText h2, .ctnText .spanAdjectives {
+    font-size: 44px !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   #benben {
@@ -219,6 +222,9 @@ footer {
   }
   .ctnText {
     text-align: center;
+  }
+  .ctnText h2, .ctnText .spanAdjectives {
+    font-size: 44px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
