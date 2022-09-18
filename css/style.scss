@@ -4,6 +4,7 @@ $secondary: #345B63;
 $tertiary: #152D35;
 $background: #112031;
 $font-family: "Red Hat Display", sans-serif;
+
 body{
     font-family: $font-family;
     background-color: $background;
@@ -14,6 +15,7 @@ nav{
         background-color: $secondary;
     }
 }
+
 .smol{
     font-size: 13px;
 }
@@ -47,7 +49,60 @@ nav{
 .bigus:hover{
     position:relative;
     top:-10px;
+
+footer{
+    background-color: $background;
+    color: $primary;
 }
+.bannerText{
+    display: none;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+.wrapper{
+    height: 50px;
+    width: 100%;
+}
+.spanAdjectives{
+    display: block;
+    height: 100%;
+    animation: spin_words 10s infinite;
+}
+.words{
+    overflow: hidden;
+}
+.ctnText{
+    text-align: left;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
 
 @media (max-width:575px){
     #benben{
