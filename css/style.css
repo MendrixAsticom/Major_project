@@ -21,7 +21,7 @@ h1 {
   letter-spacing: 3px;
 }
 
-h2 {
+h2, h3 {
   -webkit-text-stroke: medium;
   font-size: 25px;
   letter-spacing: 3px;
