@@ -44,16 +44,11 @@ nav{
 .bigus {
     font-weight:900 !important;
 }
+.bigus:hover{
+    position:relative;
+    top:-10px;
+}
 
-
-
-// #select-spacer{
-//     min-width:20px;
-// }
-// .place{
-//     min-width: 100px;
-// }
-//xs
 @media (max-width:575px){
     #benben{
         max-width:400px;

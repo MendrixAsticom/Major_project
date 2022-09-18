@@ -45,6 +45,11 @@ nav .active {
   font-weight: 900 !important;
 }
 
+.bigus:hover {
+  position: relative;
+  top: -10px;
+}
+
 @media (max-width: 575px) {
   #benben {
     max-width: 400px;
