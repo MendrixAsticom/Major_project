@@ -3,33 +3,58 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #112031;
   color: #D4ECDD;
+  color: white;
 }
 
 nav .active {
   background-color: #345B63;
 }
 
+.smol {
+  font-size: 13px;
+}
+
+.btn-sales {
+  max-width: 140px;
+}
+
+#admission {
+  min-width: 190px;
+}
+
+#select-spacer {
+  width: 40px;
+  max-width: 40px;
+}
+
+
+#banner-saying {
+  position: relative;
+}
+#banner-saying #absolute {
+  position: absolute;
+  top: -330px;
+  left: 40px;
+}
+#banner-saying #absolute h1 {
+  font-weight: 200;
+  padding-right: 60px;
+  color: white;
+  font-size: 6vw;
+}
+
+.bigus {
+  font-weight: 900 !important;
+}
+
+.bigus:hover {
+  position: relative;
+  top: -10px;
+}
+
 footer {
   background-color: #112031;
   color: #D4ECDD;
-}
-
-h1 {
-  color: #D4ECDD;
-  -webkit-text-stroke: medium;
-  font-size: 25px;
-  letter-spacing: 3px;
-}
-
-h2, h3 {
-  -webkit-text-stroke: medium;
-  font-size: 25px;
-  letter-spacing: 3px;
-}
-
-span {
-  -webkit-text-stroke: 0;
-  font-size: 20px;
 }
 
 .bannerText {
@@ -113,72 +138,124 @@ span {
     transform: translateY(-400%);
   }
 }
-@media (max-width: 320px) {
-  .ctnText {
-    text-align: center;
+@media (max-width: 575px) {
+  #benben {
+    max-width: 400px;
+    height: auto;
+  }
+  #item-desc {
+    max-width: 500px;
+  }
+  #store-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+  }
+  #item-frame {
+    min-height: 275px;
+    min-width: 260px;
+    max-width: 278px;
+    /* max-width: 897px; */
+    position: relative;
+  }
+  #absolute h1 {
+    font-size: 44px !important;
   }
 }
-@media (max-width: 375px) and (min-width: 321px) {
-  .ctnText {
-    text-align: center;
+@media (min-width: 576px) and (max-width: 767px) {
+  #benben {
+    max-width: 420px;
+    height: auto;
+  }
+  #store-item {
+    max-width: 520px;
+  }
+  #spacer {
+    min-width: 100px;
+  }
+  #item-desc {
+    max-width: 500px;
+  }
+  #store-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+  }
+  #item-frame {
+    min-height: 340px;
+    min-width: 330px;
+    max-width: 350px;
+    /* max-width: 897px; */
+    position: relative;
+  }
+  #absolute h1 {
+    font-size: 8vw !important;
   }
 }
-@media (max-width: 425px) and (min-width: 376px) {
-  .ctnText {
-    text-align: center;
+@media (min-width: 768px) and (max-width: 991px) {
+  #benben {
+    max-width: 420px;
+    height: auto;
+  }
+  #store-item {
+    max-width: 400px;
+  }
+  #spacer {
+    min-width: 100px;
+  }
+  #item-desc {
+    max-width: 300px;
+  }
+  #store-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+  }
+  #item-frame {
+    min-height: 340px;
+    min-width: 330px;
+    max-width: 410px;
+    /* max-width: 897px; */
+    position: relative;
   }
 }
-@media (max-width: 588px) and (min-width: 426px) {
-  .ctnText {
-    text-align: center;
+@media (min-width: 992px) {
+  #benben {
+    max-width: 400px;
+    height: auto;
   }
-  h1, h2 {
-    font-size: 40px;
+  #store-item {
+    max-width: 400px;
+    min-width: 398px;
   }
-  span {
-    font-size: 20px;
+  #spacer {
+    min-width: 100px;
   }
-}
-@media (max-width: 850px) and (min-width: 588px) {
-  h1, h2 {
-    font-size: 60px;
+  #item-desc {
+    max-width: 700px;
   }
-  span {
-    font-size: 40px;
+  #store-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
   }
-  .ctnText {
-    text-align: center;
-  }
-}
-@media (max-width: 1024px) and (min-width: 850px) {
-  h1, h2 {
-    font-size: 80px;
-  }
-  span {
-    font-size: 60px;
-  }
-  .wrapper {
-    height: 70px;
-  }
-  .bannerText {
-    top: 80px;
-  }
-}
-@media (min-width: 1025px) {
-  h1 {
-    font-size: 120px;
-  }
-  h2 {
-    font-size: 100px;
-  }
-  span {
-    font-size: 80px;
-  }
-  .bannerText {
-    top: 90px;
-    left: 40px;
-  }
-  .wrapper {
-    height: 100px;
+  #item-frame {
+    min-height: 400px;
+    min-width: 397px;
+    max-width: 410px;
+    /* max-width: 897px; */
+    position: relative;
   }
 }/*# sourceMappingURL=style.css.map */
