@@ -2,6 +2,7 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #112031;
+  color: #D4ECDD;
   color: white;
 }
 
@@ -58,9 +59,15 @@ footer {
 .bannerText {
   display: none;
   position: absolute;
-  top: 0;
+  top: 175px;
   left: 0;
   right: 0;
+}
+.bannerText h1 {
+  font-weight: 200;
+  padding-right: 60px;
+  color: white;
+  font-size: 6vw;
 }
 
 .wrapper {
@@ -70,6 +77,7 @@ footer {
 
 .spanAdjectives {
   display: block;
+  font-size: 6vw;
   height: 100%;
   -webkit-animation: spin_words 10s infinite;
           animation: spin_words 10s infinite;
@@ -81,6 +89,11 @@ footer {
 
 .ctnText {
   text-align: left;
+}
+.ctnText h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 6vw;
 }
 
 @-webkit-keyframes spin_words {
@@ -162,6 +175,15 @@ footer {
   #absolute h1 {
     font-size: 44px !important;
   }
+  .bannerText h1 {
+    font-size: 44px !important;
+  }
+  .ctnText {
+    text-align: center;
+  }
+  .ctnText h2, .ctnText .spanAdjectives {
+    font-size: 44px !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   #benben {
@@ -195,6 +217,15 @@ footer {
   #absolute h1 {
     font-size: 8vw !important;
   }
+  .bannerText h1 {
+    font-size: 8vw !important;
+  }
+  .ctnText {
+    text-align: center;
+  }
+  .ctnText h2, .ctnText .spanAdjectives {
+    font-size: 44px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #benben {
@@ -224,6 +255,15 @@ footer {
     max-width: 410px;
     /* max-width: 897px; */
     position: relative;
+  }
+  .spanAdjectives {
+    height: 100px;
+  }
+  .wrapper {
+    height: 50px;
+  }
+  .ctnText {
+    text-align: center;
   }
 }
 @media (min-width: 992px) {
@@ -255,5 +295,11 @@ footer {
     max-width: 410px;
     /* max-width: 897px; */
     position: relative;
+  }
+  .spanAdjectives {
+    height: 150px;
+  }
+  .wrapper {
+    height: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

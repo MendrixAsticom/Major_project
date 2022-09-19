@@ -8,6 +8,7 @@ $font-family: "Red Hat Display", sans-serif;
 body{
     font-family: $font-family;
     background-color: $background;
+    color: $primary;
     color:white;
 }
 nav{
@@ -62,9 +63,15 @@ footer{
 .bannerText{
     display: none;
     position: absolute; 
-    top: 0; 
+    top: 175px; 
     left: 0;
     right: 0;
+    h1{
+        font-weight: 200;
+        padding-right:60px;
+        color:white;
+        font-size:6vw;
+    }
 }
 .wrapper{
     height: 50px;
@@ -72,6 +79,7 @@ footer{
 }
 .spanAdjectives{
     display: block;
+    font-size:6vw;
     height: 100%;
     animation: spin_words 10s infinite;
 }
@@ -80,7 +88,13 @@ footer{
 }
 .ctnText{
     text-align: left;
+    h2{
+        font-weight:900;
+        color:white;
+        font-size:6vw;
+    }
 }
+
 .fadein-left{
     -webkit-animation: floatLeft 1.5s  normal ease-out;
     animation: floatLeft 1.5s   normal ease-out;
@@ -113,6 +127,7 @@ footer{
         opacity:1;
     }
 }
+
 @keyframes spin_words{
     10%{
         transform: translateY(-112%);
@@ -168,6 +183,18 @@ footer{
             font-size:44px !important;
         }
     }
+    .bannerText{
+        h1{
+            font-size:44px !important;
+        }
+    }
+    .ctnText{
+        text-align: center;
+        h2,.spanAdjectives{
+            font-size:44px !important;
+        }
+        
+    }
 }
 //sm
 @media (min-width:576px) and (max-width:767px){
@@ -203,6 +230,17 @@ footer{
             font-size:8vw !important;
         }
     }
+    .bannerText{
+        h1{
+            font-size:8vw !important;
+        }
+    }
+    .ctnText{
+        text-align: center;
+        h2,.spanAdjectives{
+            font-size:44px !important;
+        }
+    }
 }
 //md
 @media (min-width:768px) and (max-width:991px){
@@ -232,6 +270,15 @@ footer{
         max-width: 410px;
         /* max-width: 897px; */
         position: relative;
+    }
+    .spanAdjectives{
+        height: 100px;
+    }
+    .wrapper{
+        height: 50px;
+    }
+    .ctnText{
+        text-align: center;
     }
 }
 //lg above
@@ -263,5 +310,11 @@ footer{
         max-width: 410px;
         /* max-width: 897px; */
         position: relative;
+    }
+    .spanAdjectives{
+        height: 150px;
+    }
+    .wrapper{
+        height: 100px;
     }
 }
