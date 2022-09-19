@@ -1,11 +1,15 @@
 @import url('http://fonts.cdnfonts.com/css/sen');
-body, footer{ 
-    font-family:"Sen",sans-serif !important;
-}
-footer{
-    font-weight: 400;
-    background-color:#ddf1ff;
-}
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #112031;
+    color: #D4ECDD;
+    color: white;
+  }
+  
+  footer {
+    background-color: #112031;
+    color: #D4ECDD;
+  }
 .bg-blue {
     background-color: #d7f2ff;
     opacity:1;
@@ -23,7 +27,47 @@ footer{
 	
 	background: #112031;
 }
+#banner-saying{
+    position:relative;
+}
+#absolute{
+        position:absolute;
+        top:-330px;
+        left:40px;
+}
+        h1{
+            font-weight: 200;
+            padding-right:60px;
+            color:white;
+            font-size:6vw;
+        }
+    
 
+.bigus {
+    font-weight:900 !important;
+}
+.bigus:hover{
+    position:relative;
+    top:-10px;
+}
+.display-pic {
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-height: 420px;
+  }
+  .bannerText {
+    display: none;
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+  }
+  .bannerText h1 {
+    font-weight: 200;
+    padding-right: 60px;
+    color: white;
+    font-size: 6vw;
+  }  
 .baseBlock {
 	margin: 0px 0px 35px 0px;
 	padding: 0 0 15px 0px;
@@ -410,7 +454,6 @@ h1 {
     color:whitesmoke;
     font-size: 100px;
     font-weight: bold;
-    font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer;
   }
@@ -433,14 +476,13 @@ h1 {
     color: hsl(0, 0%, 28%);
     font-size: 75px;
     font-weight: bold;
-    font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer;
     text-transform: uppercase;
   }
   
   h2 {
-    padding: 64px;
+   
     background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -458,6 +500,36 @@ h1 {
       background-position: 600px;
     }
   }
+  /*let schat */
+  #CHAT {
+    position: relative;
+    color: hsl(0, 0%, 68%);
+    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms infinite;
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 710px;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: hsl(0, 0%, 80%);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
 /* story id */
 #story{
     background: url(https://previews.123rf.com/images/stockshoppe/stockshoppe1704/stockshoppe170400024/75997064-abstract-music-collage-background.jpg);
@@ -467,6 +539,7 @@ h1 {
     color: hsla(0, 0%, 0%, 0.08);
     animation: zoomout 10s ease 500ms forwards;
     font-size: 10vw;
+    align-content: center;
   }
   
   @keyframes zoomout {
