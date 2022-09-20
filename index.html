@@ -9,6 +9,10 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -91,8 +95,8 @@
             <div class="p-4 pb-lg-2 d-lg-none ctnText">
                 <h2>OPM BANDS</h2>
             </div> 
-            <div class="col-lg-5 p-4 ctnText">
-                <div class="ctnBands"> 
+            <div class="col-lg-5 p-4 ctnText slidingLeft animate__animated">
+                <div class="ctnBands animate__animated"> 
                     <img src="assets/BenAndBen.jpg" class="img-fluid w-100 d-none d-lg-block bandsImage" alt="Ben & Ben">
                     <img src="assets/BenAndBen2.jpg" class="img-fluid w-100 d-lg-none bandsImage" alt="Ben & Ben">
                     <h3 class="pt-4">BEN & BEN</h3>
@@ -103,9 +107,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-7 pt-lg-5 mt-lg-5 p-4 ctnText">
+            <div class="col-lg-7 pt-lg-5 mt-lg-5 p-4 ctnText slidingRight animate__animated">
                 <h2 class="d-none d-lg-block">OPM BANDS</h2>
-                <div class="ctnBands">
+                <div class="ctnBands animate__animated">
                     <img src="assets/decemberAvenue.jpg" class="img-fluid pt-lg-5 bandsImage" alt="">
                     <h3 class="pt-4">DECEMBER AVENUE</h3>
                     <p>Reflects the band's repertoire, which primarily discusses life, love, and moving on "December" is the final month of the year, a gateway to the new year/new life.</p>
@@ -114,8 +118,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 p-4 pt-lg-5 mt-lg-5 ctnText">
-                <div class="ctnBands">
+            <div class="col-lg-7 p-4 pt-lg-5 mt-lg-5 ctnText slidingLeft animate__animated">
+                <div class="ctnBands animate__animated">
                     <img src="assets/silent_sanctuary.jpg" class="img-fluid bandsImage bandsImage" alt="">
                     <h3 class="pt-4">SILENT SANCTUARY</h3>
                     <p>A rock band that includes violins and a cello. Most people have had mixed reactions to this mixture; some are amazed, some are skeptical, and some are simply curious.</p>
@@ -124,8 +128,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 p-4 ctnText">
-                <div class="ctnBands"> 
+            <div class="col-lg-5 p-4 ctnText slidingRight animate__animated">
+                <div class="ctnBands animate__animated"> 
                     <img src="assets/IVspades2.jpg" class="img-fluid w-100 d-none d-lg-block bandsImage" alt="">
                     <img src="assets/sample.jpg" class="img-fluid w-100 d-lg-none bandsImage" alt="">
                     <h3 class="pt-4">IV OF SPADES</h3>
@@ -154,11 +158,11 @@
     <!--Avail tickets-->
     <div class="container">
         <div class="d-md-block d-none pt-4"><span><h2>Upcoming Dates: </h2></span></div>
-        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around">
+        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around slidingRight animate__animated">
             <div class="d-flex w-sm-100 w-md-50 justify-content-center ps-lg-5 order-md-2">
                 <a href="reserve.html"><img id="benben" class="image-fluid w-100" src="assets/ben&ben-min.jpg" alt="benenbenlog"></a>
             </div>
-            <div class="d-flex justify-content-center w-sm-50 order-md-1 ctnText">
+            <div class="d-flex justify-content-center w-sm-50 order-md-1 ctnText slidingLeft animate__animated">
                 <div>
                     <div class="d-block d-md-none pt-4"><span><h2>Upcoming Dates: </h2></span></div>
                     <div class="d-flex flex-column flex-md-row me-lg-5 py-4 justify-content-sm-between" id="band-sched" band-name="Ben & Ben">
@@ -167,7 +171,6 @@
                             <div><h4 class="country">Edinbro</h4></div>  
                             <div class="smol">O2 Academy Edinburgh</div>
                         </div>
-                        <!--<button class="btn btn-dark rounded-0 btn-sales d-none d-lg-block" role="button" href="#">BUY NOW</button>-->
                     </div>
                     <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
                         <div><h3 style="font-size: calc(1.3rem + 2.5vw);font-weight: 900;">4.01</h3></div>
@@ -199,7 +202,7 @@
         <div style="position: relative;" class="homeBanner">
             <img src="assets/test.jpg" class="img-fluid w-100" style="min-height: 584px; max-height: 585px;" alt="">
             <div class="ps-5 showBanner bannerText" style="top: 300px;">
-                <span><h1><span style="font-size: 6vw; font-weight: 900;">MOVE THE BEAT!</span></h1></span>
+                <span><h1><span style="font-size: 6vw; font-weight: 900;">HEAR THE CROWD!</span></h1></span>
                 <p class="text-justify">If you have any questions or comments, please email us or call 123-456-7890.<br> We would be delighted to answer your questions and arrange a meeting with you.<br> Ampli.fy music can help you stand out from the crowd!</p>
                 <button type="button" class="btn btn-light text-center rounded-0 btn-lg">CONTACT</button>
             </div>
@@ -208,7 +211,7 @@
     <div class="container d-lg-none">
         <div class="row px-3 py-4">
             <div class=" text-center">
-                <span><h1><span style="font-size: 44px; font-weight: 900;">MOVE THE BEAT!</span></h1></span>
+                <span><h1><span style="font-size: 44px; font-weight: 900;">HEAR THE CROWD!</span></h1></span>
                 <p class="text-justify">If you have any questions or comments, please email us or call 123-456-7890. We would be delighted to answer your questions and arrange a meeting with you. Ampli.fy music can help you stand out from the crowd!</p>
                 <button type="button" class="btn btn-light text-center rounded-0 btn-lg">CONTACT</button>
           </div>
@@ -224,16 +227,44 @@
     <script>
         $(document).ready(function () {
             $('.showBanner').fadeIn(2500);
-        });
-        $(function(){
-            $('.bandsImage').hover(function(){
-                    $(this).siblings('.progress').children('.progressBar').attr('aria-valuenow','100').css('width','100%');
-                    $(this).css('cursor', 'pointer');
-                },
-                function(){
-                    $('.progressBar').attr('aria-valuenow','0').css('width','0%');
+            $(function(){
+                $('.bandsImage').hover(function(){
+                        $(this).siblings('.progress').children('.progressBar').attr('aria-valuenow','100').css('width','100%');
+                        $(this).css('cursor', 'pointer');
+                    },
+                    function(){
+                        $('.progressBar').attr('aria-valuenow','0').css('width','0%');
+                });
             });
+            let observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    let moveObject = entry.target.querySelector('.ctnBands');
+                    
+                    if (entry.isIntersecting) {
+                    moveObject.classList.add('animate__slideInLeft');
+                    return;
+                    }
+                    moveObject.classList.remove('animate__slideInLeft');
+                });
+            });
+            observer.observe(document.querySelector('.slidingLeft'));
+            
+            
         });
+        // let listBands = document.querySelectorAll(".slidingLeft");
+        //     let observer =  new IntersectionObserver(entries =>{
+        //         entries.forEach(entry => {
+        //             entry.target.classList.add('animate__slideInLeft', entry.isIntersecting);
+        //             if(entry.isIntersecting){
+        //                 observer.unobserve(entry.target);
+        //             }  
+        //         });
+        //     },{
+        //         threshold: 0.5,
+        //     });
+        //     listBands.forEach(slidingLeft => {
+        //         observer.observe(slidingLeft);                
+        //     });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
