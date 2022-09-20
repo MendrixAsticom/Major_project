@@ -51,6 +51,12 @@ nav .active {
   top: -10px;
 }
 
+.display-pic {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 420px;
+}
+
 footer {
   background-color: #112031;
   color: #D4ECDD;
@@ -96,6 +102,41 @@ footer {
   font-size: 6vw;
 }
 
+.fadein-left {
+  -webkit-animation: floatLeft 1.5s normal ease-out;
+  animation: floatLeft 1.5s normal ease-out;
+}
+
+.fadein-right {
+  -webkit-animation: floatRight 1.5s normal ease-out;
+  animation: floatRight 1.5s normal ease-out;
+}
+
+.fadein-bottom {
+  -webkit-animation: floatBottom 1.5s normal ease-out;
+  animation: floatBottom 1.5s normal ease-out;
+}
+
+@-webkit-keyframes floatRight {
+  0% {
+    right: 500px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes floatRight {
+  0% {
+    right: 500px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes spin_words {
   10% {
     transform: translateY(-112%);
@@ -122,7 +163,6 @@ footer {
     transform: translateY(-400%);
   }
 }
-
 @keyframes spin_words {
   10% {
     transform: translateY(-112%);
@@ -150,9 +190,8 @@ footer {
   }
 }
 @media (max-width: 575px) {
-  #benben {
+  .display-pic {
     max-width: 400px;
-    height: auto;
   }
   #item-desc {
     max-width: 500px;
@@ -186,9 +225,8 @@ footer {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  #benben {
+  .display-pic {
     max-width: 420px;
-    height: auto;
   }
   #store-item {
     max-width: 520px;
@@ -228,9 +266,8 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #benben {
+  .display-pic {
     max-width: 420px;
-    height: auto;
   }
   #store-item {
     max-width: 400px;
@@ -267,9 +304,8 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  #benben {
-    max-width: 400px;
-    height: auto;
+  .display-pic {
+    max-width: 500px;
   }
   #store-item {
     max-width: 400px;

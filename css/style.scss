@@ -4,6 +4,7 @@ $secondary: #345B63;
 $tertiary: #152D35;
 $background: #112031;
 $font-family: "Red Hat Display", sans-serif;
+$fadevar: 20px;
 
 body{
     font-family: $font-family;
@@ -16,7 +17,6 @@ nav{
         background-color: $secondary;
     }
 }
-
 .smol{
     font-size: 13px;
 }
@@ -51,6 +51,21 @@ nav{
     position:relative;
     top:-10px;
 }
+.display-pic {
+    object-fit:contain;
+    max-height: 420px;
+}
+
+ #item-frame{   
+
+
+    #store-item{
+        object-fit:contain;
+        height:400px;
+        width:400px;
+    }
+}
+
 footer{
     background-color: $background;
     color: $primary;
@@ -90,6 +105,82 @@ footer{
     }
 }
 
+
+.fadein-left{
+    position:relative;
+    -webkit-animation: floatLeft 1s  normal ease-out;
+    animation: floatLeft 1s   normal ease-out;
+}
+.fadein-right{
+    position:relative;
+    -webkit-animation: floatRight 1s  normal ease-out;
+    animation: floatRight 1s   normal ease-out;
+}
+
+//fadein-right
+@-webkit-keyframes floatRight {
+    0% {
+        left: $fadevar;
+        opacity:0;
+    }
+    100% {
+        left: 0px;
+        opacity:1;
+    }
+}
+@keyframes floatRight {
+    0% {
+        left: $fadevar;
+        opacity:0;
+    }
+    100% {
+        left: 0px;
+        opacity:1;
+    }
+}
+//fadein-left
+@-webkit-keyframes floatLeft {
+    0% {
+        right: $fadevar;
+        opacity:0;
+    }
+    100% {
+        right: 0px;
+        opacity:1;
+    }
+}
+@keyframes floatLeft {
+    0% {
+        right: $fadevar;
+        opacity:0;
+    }
+    100% {
+        right: 0px;
+        opacity:1;
+    }
+}
+//fadein-bottom
+@-webkit-keyframes floatBottom {
+    0% {
+        top: $fadevar;
+        opacity:0;
+    }
+    100% {
+        top: 0px;
+        opacity:1;
+    }
+}
+@keyframes floatBottom {
+    0% {
+        top: $fadevar;
+        opacity:0;
+    }
+    100% {
+        top: 0px;
+        opacity:1;
+    }
+}
+
 @keyframes spin_words{
     10%{
         transform: translateY(-112%);
@@ -117,30 +208,15 @@ footer{
     }
 }
 
-
+//auto
 @media (max-width:575px){
-    #benben{
+    .display-pic{
         max-width:400px;
-        height:auto;
     }
     #item-desc{
         max-width:500px;        
     }
-    #store-item{ 
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        right: 0;
-    }
-    #item-frame{
-        min-height: 275px;
-        min-width: 260px;
-        max-width: 278px;
-        /* max-width: 897px; */
-        position: relative;
-    }
+
     #absolute{
         h1{
             font-size:44px !important;
@@ -155,18 +231,19 @@ footer{
         text-align: center;
         h2,.spanAdjectives{
             font-size:44px !important;
-        }
-        
+        }   
+    }
+    .fadein-left, .fadein-right{
+        position:relative;
+        -webkit-animation: floatBottom 1s  normal ease-out ;
+        animation: floatBottom 1s   normal ease-out ;
     }
 }
 //sm
 @media (min-width:576px) and (max-width:767px){
-    #benben{ 
+    
+    .display-pic{ 
         max-width: 420px;
-        height:auto;
-    }
-    #store-item{
-        max-width:520px;
     }
     #spacer{
         min-width:100px;
@@ -174,21 +251,6 @@ footer{
     #item-desc{
         max-width:500px;        
     }
-    #store-item{ 
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        right: 0;
-    }
-    #item-frame{
-        min-height: 340px;
-        min-width: 330px;
-        max-width: 350px;
-        /* max-width: 897px; */
-        position: relative;
-    }
     #absolute{
         h1{
             font-size:8vw !important;
@@ -205,36 +267,22 @@ footer{
             font-size:44px !important;
         }
     }
+    .fadein-left, .fadein-right{
+        position:relative;
+        -webkit-animation: floatBottom 1s  normal ease-out;
+        animation: floatBottom 1s   normal ease-out;
+    }
 }
 //md
 @media (min-width:768px) and (max-width:991px){
-    #benben{
+    .display-pic{
         max-width:420px;
-        height:auto;
-    }
-    #store-item{
-        max-width:400px;
     }
     #spacer{
         min-width:100px;
     }
     #item-desc{
         max-width:300px;        
-    }
-    #store-item{ 
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        right: 0;
-    }
-    #item-frame{
-        min-height: 340px;
-        min-width: 330px;
-        max-width: 410px;
-        /* max-width: 897px; */
-        position: relative;
     }
     .spanAdjectives{
         height: 100px;
@@ -245,16 +293,12 @@ footer{
     .ctnText{
         text-align: center;
     }
+    
 }
 //lg above
 @media(min-width:992px) {
-    #benben{
-        max-width:400px;
-        height:auto;
-    }
-    #store-item{
-        max-width:400px;
-        min-width:398px;
+    .display-pic{
+        max-width:500px;
     }
     #spacer{ 
         min-width:100px;
@@ -262,25 +306,11 @@ footer{
     #item-desc{
         max-width:700px;        
     }
-    #store-item{ 
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        right: 0;
-    }
-    #item-frame{
-        min-height: 400px;
-        min-width: 397px;
-        max-width: 410px;
-        /* max-width: 897px; */
-        position: relative;
-    }
     .spanAdjectives{
         height: 150px;
     }
     .wrapper{
         height: 100px;
     }
+
 }
