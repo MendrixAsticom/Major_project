@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!-- navigation -->
@@ -68,12 +69,12 @@
     <section class="container-fluid bg-white text-dark py-5">
         <div class="d-md-block d-none py-4"><span><h2 class="fw-bolder">Upcoming Dates: <span class="band-name" band-name="Ben & Ben"></span></h2></span></div>
         <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around pb-5">
-            <div class="d-flex w-sm-100 w-md-50 justify-content-center order-md-2">
+            <div class="d-flex justify-content-center order-md-2">
                 <img class="image-fluid w-100 display-pic" src="assets/ben&ben-min.jpg" alt="benenbenlog">
             </div>
             <div class="d-flex justify-content-center w-sm-50 order-md-1">
                 <div>
-                    <div class="d-block d-md-none pt-4 "><span><h2 class="d-flex flex-column fw-bolder">Upcoming Dates: <span class="band-name pt-3" band-name="Ben & Ben"></span></h2></span></div>
+                    <div class="d-block d-md-none pt-4 "><span><h2 class="d-flex flex-column fw-bolder">Upcoming Dates: <span class="band-name pt-3" band-index="0" band-name="Ben & Ben"></span></h2></span></div>
                     <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
                         <div><h3 class="datemd">3.21</b></h3></div>
                         <div class="px-md-2 px-lg-5 ">
@@ -114,12 +115,12 @@
     <section class="container-fluid py-5">
         <div class="d-md-block d-none pt-4"><span><h2 class="fw-bolder">Upcoming Dates: <span class="band-name" band-name="IV of Spades"></span></h2></span></div>
         <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around pb-5">
-            <div class="d-flex w-sm-100 w-md-50 justify-content-center order-md-1">
+            <div class="d-flex justify-content-center order-md-1">
                 <img class="image-fluid w-100 display-pic" src="assets/IV-OF-SPADES_2020_hiatus.jpg" alt="3ofclubs">
             </div>
             <div class="d-flex justify-content-center w-sm-50 order-md-2">
                 <div>
-                    <div class="d-block d-md-none pt-4"><span><h2 class="fw-bolder d-flex flex-column">Upcoming Dates: <span class="band-name pt-2" band-name="IV of Spades"></span></h2></span></div>
+                    <div class="d-block d-md-none pt-4"><span><h2 class="fw-bolder d-flex flex-column">Upcoming Dates: <span class="band-name pt-2"  band-index="1" band-name="IV of Spades"></span></h2></span></div>
                     <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
                         <div><h3 class="datemd">3.21</b></h3></div>
                         <div class="px-md-2 px-lg-5 ">
@@ -160,12 +161,12 @@
     <section class="container-fluid bg-white text-dark py-5">
         <div class="d-md-block d-none py-4"><span><h2 class="fw-bolder">Upcoming Dates: <span class="band-name" band-name="Silent Sanctuary"></span></h2></span></div>
         <div class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-around pb-5">
-            <div class="d-flex w-sm-100 w-md-50 justify-content-center order-md-2">
+            <div class="d-flex justify-content-center order-md-2">
                 <img class="image-fluid w-100 display-pic" src="assets/silent_sanc.jpg" alt="silensan">
             </div>
             <div class="d-flex justify-content-center w-sm-50 order-md-1">
                 <div>
-                    <div class="d-block d-md-none pt-4"><span><h2 class="d-flex flex-column fw-bolder">Upcoming Dates: <span class="band-name pt-2" band-name="Silent Sanctuary"></span></h2></span></div>
+                    <div class="d-block d-md-none pt-4"><span><h2 class="d-flex flex-column fw-bolder">Upcoming Dates: <span class="band-name pt-2" band-index="2" band-name="Silent Sanctuary"></span></h2></span></div>
                     <div class="d-flex flex-column flex-md-row py-4 justify-content-sm-between">
                         <div><h3 class="datemd">3.21</b></h3></div>
                         <div class="px-md-2 px-lg-5 ">
@@ -212,23 +213,33 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
     <script>
+        var thumbnails=[
+            ["assets/ben&ben-min.jpg","assets/ben&benlogo.jpg"],
+            ["assets/IV-OF-SPADES_2020_hiatus.jpg","assets/4spades.jpg"],
+            ["assets/silent_sanc.jpg","assets/ssanctuary.jpg","assets/ss1.jpg"]
+        ]
+
         $(document).ready(function(){
+            //add band-name on load
             $(".band-name").each(function(){
                 var band=$(this).attr("band-name");
                 console.log(band);
                 $(this).text(band);
             });
+
+            //on button click send details to other website via session variables
             $(".btn-sales").click(function(){
                 var date = $(this).siblings("div").children(".datemd").text();
                 var country = $(this).siblings("div.px-md-2").children("div").children(".country").text();
                 var place = $(this).siblings("div.px-md-2").children("div.smol").text();
                 var band_name = $(this).parent("div").siblings(".d-block").children("span").children("h2").children("span").attr("band-name");
-                console.log(band_name);
+                var band_index = $(this).parent("div").siblings(".d-block").children("span").children("h2").children("span").attr("band-index");
                 var list = {
                     band_name:band_name,
                     date:date,
                     country:country,
-                    place:place
+                    place:place,
+                    thumbnails:thumbnails[band_index]
                 }
 
                 sessionStorage.setItem("info",JSON.stringify(list));
@@ -236,7 +247,7 @@
                 window.location.href= "booking.html";
             });
 
-            //function that detects if id or class is in viewport or not 
+            //function that detects if html element is in viewport or not 
             $.fn.isInViewport = function () {
                 let elementTop = $(this).offset().top;
                 let elementBottom = elementTop + $(this).outerHeight();
@@ -248,9 +259,26 @@
             };
             //detect scroll event
             $(window).scroll(function () {
-                console.log("scroll");
+                //fade in left
+                $(".fw-bolder,.order-md-2,.order-md-1").each(function(){
+                    if ($(this).isInViewport()){
+                        var class_name = $(this)[0].className;
+                        if(class_name.includes("order-md-2")){
+                            $(this).addClass('fadein-right');
+                        }
+                        else if(class_name.includes("fw-bolder")){
+                            $(this).addClass("fadein-left");
+                        }
+                        else if(class_name.includes("order-md-1")){
+                            $(this).addClass("fadein-left");
+                        }
+
+                    } 
+                });
             });
 
+            //script for footer email validation
+            $.getScript("js/footer.js");
         });
     </script>
 </body>
