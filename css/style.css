@@ -10,6 +10,11 @@ nav .active {
   background-color: #345B63;
 }
 
+h3 {
+  font-size: calc(1.3rem + 2.5vw);
+  font-weight: 900;
+}
+
 .smol {
   font-size: 13px;
 }
