@@ -22,11 +22,13 @@ h3 {
 .btn-sales {
   max-width: 140px;
   background-color: #345B63;
+  border: none;
 }
 
 .btn-purchase {
   max-width: 200px;
   background-color: #345B63;
+  border: none;
 }
 
 #admission {
