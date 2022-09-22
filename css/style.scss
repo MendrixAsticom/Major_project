@@ -313,7 +313,9 @@ footer{
     .ctnText{
         text-align: center;
     }
-    
+    .benbenImage{
+        max-width: 370px;
+    }
 }
 //lg above
 @media(min-width:992px) {
@@ -332,5 +334,8 @@ footer{
     .wrapper{
         height: 100px;
     }
-
+    .benbenImage{
+        min-width: 370px;
+        max-width: 500px;
+    }
 }

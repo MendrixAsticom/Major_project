@@ -328,6 +328,9 @@ footer {
   .ctnText {
     text-align: center;
   }
+  .benbenImage {
+    max-width: 370px;
+  }
 }
 @media (min-width: 992px) {
   .display-pic {
@@ -344,5 +347,9 @@ footer {
   }
   .wrapper {
     height: 100px;
+  }
+  .benbenImage {
+    min-width: 370px;
+    max-width: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
