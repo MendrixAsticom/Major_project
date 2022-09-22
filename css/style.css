@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #112031;
@@ -14,6 +14,11 @@ nav .active {
 h3 {
   font-size: calc(1.3rem + 2.5vw);
   font-weight: 900;
+}
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
 }
 
 .smol {
