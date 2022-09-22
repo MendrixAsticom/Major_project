@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/red-hat-display");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #112031;
@@ -10,6 +10,7 @@ nav .active {
   background-color: #345B63;
 }
 
+/*comment */
 h3 {
   font-size: calc(1.3rem + 2.5vw);
   font-weight: 900;
