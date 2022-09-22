@@ -1,4 +1,5 @@
-@import url("http://fonts.cdnfonts.com/css/red-hat-display");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #112031;
