@@ -15,6 +15,12 @@
     <link rel="icon" href="assets\amplifylogo3.png">
 </head>
 <body>
+    <!--loader-->
+    <div class="overlay"></div>
+    <div class="loader"> 
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
     <!-- navigation -->
     <nav id="navigation" class="navbar navbar-expand-sm sticky-top navbar-dark" style="background-color: #112031;" >
         <div class="container-fluid">
@@ -221,9 +227,10 @@
             $("footer").load("footer.html");
         </script>
     </footer>
-<!--javascript and jquery functions-->
+<!-- javascript and jquery functions-->
     <script>
         $(document).ready(function () {
+            $.getScript("js/all.js");
             $('.showBanner').fadeIn(2500);
             $(function(){
                 $('.bandsImage').hover(function(){
