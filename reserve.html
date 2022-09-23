@@ -14,6 +14,12 @@
     <link rel="icon" href="assets\amplifylogo3.png">
 </head>
 <body>
+    <!--loader-->
+    <div class="overlay"></div>
+    <div class="loader"> 
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
     <!-- navigation -->
     <nav id="navigation" class="navbar navbar-expand-sm sticky-top navbar-dark" style="background-color: #112031;" >
         <div class="container-fluid">
@@ -221,6 +227,7 @@
         ]
 
         $(document).ready(function(){
+            $.getScript("js/all.js");
             //add band-name on load
             $(".band-name").each(function(){
                 var band=$(this).attr("band-name");

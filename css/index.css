@@ -346,16 +346,7 @@ p.site-title {
     height: 100vh;
     display: block;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: none;
-    opacity: .8;
-    z-index: 999;
-    height: 100%;
-}  
+
 /* text*/
 .ctnText h1 {
     font-weight: 900;
